@@ -1,19 +1,31 @@
 {
-  "name": "dropdown",
+  "name": "todolist-manager",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --mode development",
+    "dev": "webpack serve --mode development --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "todo",
+    "todolist",
+    "javascript",
+    "webpack"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "A todo list manager that allows creating multiple lists and adding items to them",
   "dependencies": {
     "css-loader": "^7.1.2",
     "css-styles": "^1.0.2",
     "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
     "webpack": "^5.100.2",
     "webpack-cli": "^6.0.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^4.15.2"
   }
 }
